@@ -3,7 +3,7 @@ kind: Service
 metadata:
   annotations:
     app.openshift.io/runtime: js
-    app.openshift.io/vcs-ref: ff46ac891d035af0b296fa602cc7be2bd7d25dd1
+    app.openshift.io/vcs-ref: 233e917d3d5ebc3bdd757239a2d9997fe9908692
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/rd-so-nextjs.git
   labels:
     app: e2e-nextjs
@@ -28,7 +28,7 @@ kind: Deployment
 metadata:
   annotations:
     app.openshift.io/runtime: js
-    app.openshift.io/vcs-ref: ff46ac891d035af0b296fa602cc7be2bd7d25dd1
+    app.openshift.io/vcs-ref: 233e917d3d5ebc3bdd757239a2d9997fe9908692
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/rd-so-nextjs.git
   labels:
     app: e2e-nextjs
@@ -48,7 +48,7 @@ spec:
     metadata:
       annotations:
         app.openshift.io/runtime: js
-        app.openshift.io/vcs-ref: ff46ac891d035af0b296fa602cc7be2bd7d25dd1
+        app.openshift.io/vcs-ref: 233e917d3d5ebc3bdd757239a2d9997fe9908692
         app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/rd-so-nextjs.git
       labels:
         app: e2e-nextjs
@@ -61,7 +61,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/stephan_orlowsky/rd-so-nextjs:ff46ac891d035af0b296fa602cc7be2bd7d25dd1
+        image: quay.io/stephan_orlowsky/rd-so-nextjs:233e917d3d5ebc3bdd757239a2d9997fe9908692
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -100,7 +100,7 @@ kind: Route
 metadata:
   annotations:
     app.openshift.io/runtime: js
-    app.openshift.io/vcs-ref: ff46ac891d035af0b296fa602cc7be2bd7d25dd1
+    app.openshift.io/vcs-ref: 233e917d3d5ebc3bdd757239a2d9997fe9908692
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/rd-so-nextjs.git
   labels:
     app: e2e-nextjs
